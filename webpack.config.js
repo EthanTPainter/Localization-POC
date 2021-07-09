@@ -13,7 +13,12 @@ module.exports = {
 				exclude: /(node_modules)/,
 				loader: "babel-loader",
 				options: {
-					presets: ["@babel/env"],
+					presets: [
+						"@babel/env",
+						"@babel/preset-env",
+						"@babel/preset-react",
+						"@babel/preset-typescript"
+					],
 				},
 			},
 			// TS Loader

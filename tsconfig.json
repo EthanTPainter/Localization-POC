@@ -17,7 +17,7 @@
 		"inlineSources": true,
 		"resolveJsonModule": true,
 		"esModuleInterop": true,
-		"lib": ["dom", "es6", "es7", "esnext"],
+		"lib": ["dom", "dom.iterable", "es6", "es7", "esnext"],
 		"jsx": "react"
 	},
 	"include": ["src/**/*"],

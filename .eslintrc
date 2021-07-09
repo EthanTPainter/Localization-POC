@@ -1,5 +1,36 @@
 {
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react-hooks"
+    ],
+    // https://eslint.org/docs/rules/
     "rules": {
-        
+        "curly": 2,
+        "no-else-return": 2,
+        "no-magic-numbers": 1,
+        "require-await": 2,
+        "no-return-await": 1,
+        "no-useless-return": 1,
+        "sort-imports": 1,
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/prop-types": "off",
+        "@typescript-eslint/no-var-requires": 0,
+        "yoda": 2
+    },
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "detect"
+        }
     }
 }
